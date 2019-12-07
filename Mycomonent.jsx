@@ -123,6 +123,12 @@ export default class Mycomonent extends Component {
         )
         
     }
+    shouldComponentUpdate(nextProps, nextState) {
+    console.log(nextProps, nextState);
+    console.log(this.props, this.state);
+
+    return false;  
+  }
     cancelHandler = ()=>{
         this.setState(
             {
