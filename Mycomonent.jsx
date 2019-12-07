@@ -50,7 +50,7 @@ class Mycomonent extends Component {
             <div>
                 <form onSubmit={this.submitHandler}>
                     <input type="text" name="name" id="name" placeholder="Task"/>
-                    <input type="text" name="email" id="email" placeholder="Date"/>
+                    <input type="date" name="email" id="email" placeholder="Date"/>
                     <button type="submit">Submit</button>
                 </form>
                 <MyTable persons={this.state.Persons} editElement={this.editElement}/>
