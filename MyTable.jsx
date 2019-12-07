@@ -36,7 +36,7 @@ const MyTable = (props)=>{
             <table border="1">
                     <thead>
                         <tr>
-                            <th>Name</th>
+                            <th>Task</th>
                             <th>Edit</th>
                         </tr>
                     </thead>
