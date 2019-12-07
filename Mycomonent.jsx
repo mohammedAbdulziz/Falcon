@@ -3,7 +3,7 @@ import MyTable from './MyTable'
 class Mycomonent extends Component {
     state={
         Persons:[
-            {name:"Ahmed",email:"a@gmail.com"}
+            {name:"Ahmed",email:"7/12/2019"}
         ]
     }
     submitHandler= (event)=>{
@@ -49,8 +49,8 @@ class Mycomonent extends Component {
         return (
             <div>
                 <form onSubmit={this.submitHandler}>
-                    <input type="text" name="name" id="name" placeholder="Name"/>
-                    <input type="email" name="email" id="email" placeholder="Email"/>
+                    <input type="text" name="name" id="name" placeholder="Task"/>
+                    <input type="text" name="email" id="email" placeholder="Date"/>
                     <button type="submit">Submit</button>
                 </form>
                 <MyTable persons={this.state.Persons} editElement={this.editElement}/>
